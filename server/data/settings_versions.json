@@ -1,0 +1,824 @@
+[
+  {
+    "id": "v_1756516809185",
+    "createdAt": "2025-08-30T01:20:09.185Z",
+    "author": {
+      "id": "1",
+      "name": "مدير النظام",
+      "email": "admin@fastcomand.com",
+      "role": "admin"
+    },
+    "status": "draft",
+    "message": "Edit via UI",
+    "content": {
+      "general": {
+        "businessName": "Fast Comand",
+        "language": "ar",
+        "defaultCurrency": "MRU",
+        "phone": "+222 30441100",
+        "email": "support@example.com",
+        "address": "Nouakchott"
+      },
+      "users": [
+        {
+          "id": "u_admin",
+          "name": "Admin",
+          "role": "admin",
+          "email": "admin@example.com",
+          "permissions": {
+            "read": true,
+            "write": true,
+            "update": true,
+            "delete": true
+          }
+        },
+        {
+          "id": "u_emp",
+          "name": "Employee",
+          "role": "employee",
+          "email": "emp@example.com",
+          "permissions": {
+            "read": true,
+            "write": true,
+            "update": true,
+            "delete": false
+          }
+        }
+      ],
+      "currencies": {
+        "rates": {
+          "USD": 40,
+          "AED": 11,
+          "EUR": 43
+        }
+      },
+      "shipping": {
+        "companies": [
+          {
+            "id": "sc1",
+            "name": "Aramex",
+            "countries": [
+              "UAE",
+              "CN"
+            ]
+          },
+          {
+            "id": "sc2",
+            "name": "DHL",
+            "countries": [
+              "UAE"
+            ]
+          }
+        ],
+        "types": [
+          {
+            "id": "st1",
+            "kind": "air_standard",
+            "country": "UAE",
+            "pricePerKgMRU": 1000,
+            "durationDays": 7
+          },
+          {
+            "id": "st2",
+            "kind": "air_express",
+            "country": "UAE",
+            "pricePerKgMRU": 1800,
+            "durationDays": 3
+          },
+          {
+            "id": "st3",
+            "kind": "sea",
+            "country": "CN",
+            "pricePerKgMRU": 600,
+            "durationDays": 30
+          }
+        ]
+      },
+      "ordersInvoices": {
+        "defaultCommissionPercent": 5,
+        "defaultDiscountType": "none",
+        "defaultDiscountValue": 0,
+        "invoiceBranding": {},
+        "autoPrintAfterPayment": false
+      },
+      "warehouse": {
+        "drawers": [
+          {
+            "id": "A",
+            "name": "الدرج A",
+            "capacity": 50
+          },
+          {
+            "id": "B",
+            "name": "الدرج B",
+            "capacity": 40
+          }
+        ],
+        "fullAlertThresholdPercent": 90
+      },
+      "delivery": {
+        "insideNKCPrice": 100,
+        "outsideNKCPrice": 150,
+        "courierProfitPercent": 100
+      },
+      "notifications": {
+        "missingTracking": true,
+        "unweighedShipments": true,
+        "unpaidInvoices": true,
+        "channelInApp": true,
+        "channelPush": false
+      }
+    },
+    "diffs": [
+      {
+        "key": "general",
+        "new": {
+          "businessName": "Fast Comand",
+          "language": "ar",
+          "defaultCurrency": "MRU",
+          "phone": "+222 30441100",
+          "email": "support@example.com",
+          "address": "Nouakchott"
+        }
+      },
+      {
+        "key": "users",
+        "new": [
+          {
+            "id": "u_admin",
+            "name": "Admin",
+            "role": "admin",
+            "email": "admin@example.com",
+            "permissions": {
+              "read": true,
+              "write": true,
+              "update": true,
+              "delete": true
+            }
+          },
+          {
+            "id": "u_emp",
+            "name": "Employee",
+            "role": "employee",
+            "email": "emp@example.com",
+            "permissions": {
+              "read": true,
+              "write": true,
+              "update": true,
+              "delete": false
+            }
+          }
+        ]
+      },
+      {
+        "key": "currencies",
+        "new": {
+          "rates": {
+            "USD": 40,
+            "AED": 11,
+            "EUR": 43
+          }
+        }
+      },
+      {
+        "key": "shipping",
+        "new": {
+          "companies": [
+            {
+              "id": "sc1",
+              "name": "Aramex",
+              "countries": [
+                "UAE",
+                "CN"
+              ]
+            },
+            {
+              "id": "sc2",
+              "name": "DHL",
+              "countries": [
+                "UAE"
+              ]
+            }
+          ],
+          "types": [
+            {
+              "id": "st1",
+              "kind": "air_standard",
+              "country": "UAE",
+              "pricePerKgMRU": 1000,
+              "durationDays": 7
+            },
+            {
+              "id": "st2",
+              "kind": "air_express",
+              "country": "UAE",
+              "pricePerKgMRU": 1800,
+              "durationDays": 3
+            },
+            {
+              "id": "st3",
+              "kind": "sea",
+              "country": "CN",
+              "pricePerKgMRU": 600,
+              "durationDays": 30
+            }
+          ]
+        }
+      },
+      {
+        "key": "ordersInvoices",
+        "new": {
+          "defaultCommissionPercent": 5,
+          "defaultDiscountType": "none",
+          "defaultDiscountValue": 0,
+          "invoiceBranding": {},
+          "autoPrintAfterPayment": false
+        }
+      },
+      {
+        "key": "warehouse",
+        "new": {
+          "drawers": [
+            {
+              "id": "A",
+              "name": "الدرج A",
+              "capacity": 50
+            },
+            {
+              "id": "B",
+              "name": "الدرج B",
+              "capacity": 40
+            }
+          ],
+          "fullAlertThresholdPercent": 90
+        }
+      },
+      {
+        "key": "delivery",
+        "new": {
+          "insideNKCPrice": 100,
+          "outsideNKCPrice": 150,
+          "courierProfitPercent": 100
+        }
+      },
+      {
+        "key": "notifications",
+        "new": {
+          "missingTracking": true,
+          "unweighedShipments": true,
+          "unpaidInvoices": true,
+          "channelInApp": true,
+          "channelPush": false
+        }
+      }
+    ]
+  },
+  {
+    "id": "v_1756515747182",
+    "createdAt": "2025-08-30T01:02:27.182Z",
+    "author": {
+      "id": "1",
+      "name": "مدير النظام",
+      "email": "admin@fastcomand.com",
+      "role": "admin"
+    },
+    "status": "draft",
+    "message": "Edit via UI",
+    "content": {
+      "general": {
+        "businessName": "Fast Comand",
+        "language": "ar",
+        "defaultCurrency": "MRU",
+        "phone": "+222 00000000",
+        "email": "support@example.com",
+        "address": "Nouakchott"
+      },
+      "users": [
+        {
+          "id": "u_admin",
+          "name": "Admin",
+          "role": "admin",
+          "email": "admin@example.com",
+          "permissions": {
+            "read": true,
+            "write": true,
+            "update": true,
+            "delete": true
+          }
+        },
+        {
+          "id": "u_emp",
+          "name": "Employee",
+          "role": "employee",
+          "email": "emp@example.com",
+          "permissions": {
+            "read": true,
+            "write": true,
+            "update": true,
+            "delete": false
+          }
+        }
+      ],
+      "currencies": {
+        "rates": {
+          "USD": 40,
+          "AED": 11,
+          "EUR": 43
+        }
+      },
+      "shipping": {
+        "companies": [
+          {
+            "id": "sc1",
+            "name": "Aramex",
+            "countries": [
+              "UAE",
+              "CN"
+            ]
+          },
+          {
+            "id": "sc2",
+            "name": "DHL",
+            "countries": [
+              "UAE"
+            ]
+          }
+        ],
+        "types": [
+          {
+            "id": "st1",
+            "kind": "air_standard",
+            "country": "UAE",
+            "pricePerKgMRU": 1000,
+            "durationDays": 7
+          },
+          {
+            "id": "st2",
+            "kind": "air_express",
+            "country": "UAE",
+            "pricePerKgMRU": 1800,
+            "durationDays": 3
+          },
+          {
+            "id": "st3",
+            "kind": "sea",
+            "country": "CN",
+            "pricePerKgMRU": 600,
+            "durationDays": 30
+          }
+        ]
+      },
+      "ordersInvoices": {
+        "defaultCommissionPercent": 5,
+        "defaultDiscountType": "none",
+        "defaultDiscountValue": 0,
+        "invoiceBranding": {},
+        "autoPrintAfterPayment": false
+      },
+      "warehouse": {
+        "drawers": [
+          {
+            "id": "A",
+            "name": "الدرج A",
+            "capacity": 50
+          },
+          {
+            "id": "B",
+            "name": "الدرج B",
+            "capacity": 40
+          }
+        ],
+        "fullAlertThresholdPercent": 90
+      },
+      "delivery": {
+        "insideNKCPrice": 100,
+        "outsideNKCPrice": 150,
+        "courierProfitPercent": 100
+      },
+      "notifications": {
+        "missingTracking": true,
+        "unweighedShipments": true,
+        "unpaidInvoices": true,
+        "channelInApp": true,
+        "channelPush": false
+      }
+    },
+    "diffs": [
+      {
+        "key": "general",
+        "new": {
+          "businessName": "Fast Comand",
+          "language": "ar",
+          "defaultCurrency": "MRU",
+          "phone": "+222 00000000",
+          "email": "support@example.com",
+          "address": "Nouakchott"
+        }
+      },
+      {
+        "key": "users",
+        "new": [
+          {
+            "id": "u_admin",
+            "name": "Admin",
+            "role": "admin",
+            "email": "admin@example.com",
+            "permissions": {
+              "read": true,
+              "write": true,
+              "update": true,
+              "delete": true
+            }
+          },
+          {
+            "id": "u_emp",
+            "name": "Employee",
+            "role": "employee",
+            "email": "emp@example.com",
+            "permissions": {
+              "read": true,
+              "write": true,
+              "update": true,
+              "delete": false
+            }
+          }
+        ]
+      },
+      {
+        "key": "currencies",
+        "new": {
+          "rates": {
+            "USD": 40,
+            "AED": 11,
+            "EUR": 43
+          }
+        }
+      },
+      {
+        "key": "shipping",
+        "new": {
+          "companies": [
+            {
+              "id": "sc1",
+              "name": "Aramex",
+              "countries": [
+                "UAE",
+                "CN"
+              ]
+            },
+            {
+              "id": "sc2",
+              "name": "DHL",
+              "countries": [
+                "UAE"
+              ]
+            }
+          ],
+          "types": [
+            {
+              "id": "st1",
+              "kind": "air_standard",
+              "country": "UAE",
+              "pricePerKgMRU": 1000,
+              "durationDays": 7
+            },
+            {
+              "id": "st2",
+              "kind": "air_express",
+              "country": "UAE",
+              "pricePerKgMRU": 1800,
+              "durationDays": 3
+            },
+            {
+              "id": "st3",
+              "kind": "sea",
+              "country": "CN",
+              "pricePerKgMRU": 600,
+              "durationDays": 30
+            }
+          ]
+        }
+      },
+      {
+        "key": "ordersInvoices",
+        "new": {
+          "defaultCommissionPercent": 5,
+          "defaultDiscountType": "none",
+          "defaultDiscountValue": 0,
+          "invoiceBranding": {},
+          "autoPrintAfterPayment": false
+        }
+      },
+      {
+        "key": "warehouse",
+        "new": {
+          "drawers": [
+            {
+              "id": "A",
+              "name": "الدرج A",
+              "capacity": 50
+            },
+            {
+              "id": "B",
+              "name": "الدرج B",
+              "capacity": 40
+            }
+          ],
+          "fullAlertThresholdPercent": 90
+        }
+      },
+      {
+        "key": "delivery",
+        "new": {
+          "insideNKCPrice": 100,
+          "outsideNKCPrice": 150,
+          "courierProfitPercent": 100
+        }
+      },
+      {
+        "key": "notifications",
+        "new": {
+          "missingTracking": true,
+          "unweighedShipments": true,
+          "unpaidInvoices": true,
+          "channelInApp": true,
+          "channelPush": false
+        }
+      }
+    ]
+  },
+  {
+    "id": "v_1756515675939",
+    "createdAt": "2025-08-30T01:01:15.939Z",
+    "author": {
+      "id": "1",
+      "name": "مدير النظام",
+      "email": "admin@fastcomand.com",
+      "role": "admin"
+    },
+    "status": "draft",
+    "message": "Edit via UI",
+    "content": {
+      "general": {
+        "businessName": "Fast Command",
+        "language": "ar",
+        "defaultCurrency": "MRU",
+        "phone": "+222 00000000",
+        "email": "support@example.com",
+        "address": "Nouakchott"
+      },
+      "users": [
+        {
+          "id": "u_admin",
+          "name": "Admin",
+          "role": "admin",
+          "email": "admin@example.com",
+          "permissions": {
+            "read": true,
+            "write": true,
+            "update": true,
+            "delete": true
+          }
+        },
+        {
+          "id": "u_emp",
+          "name": "Employee",
+          "role": "employee",
+          "email": "emp@example.com",
+          "permissions": {
+            "read": true,
+            "write": true,
+            "update": true,
+            "delete": false
+          }
+        }
+      ],
+      "currencies": {
+        "rates": {
+          "USD": 40,
+          "AED": 11,
+          "EUR": 43
+        }
+      },
+      "shipping": {
+        "companies": [
+          {
+            "id": "sc1",
+            "name": "Aramex",
+            "countries": [
+              "UAE",
+              "CN"
+            ]
+          },
+          {
+            "id": "sc2",
+            "name": "DHL",
+            "countries": [
+              "UAE"
+            ]
+          }
+        ],
+        "types": [
+          {
+            "id": "st1",
+            "kind": "air_standard",
+            "country": "UAE",
+            "pricePerKgMRU": 1000,
+            "durationDays": 7
+          },
+          {
+            "id": "st2",
+            "kind": "air_express",
+            "country": "UAE",
+            "pricePerKgMRU": 1800,
+            "durationDays": 3
+          },
+          {
+            "id": "st3",
+            "kind": "sea",
+            "country": "CN",
+            "pricePerKgMRU": 600,
+            "durationDays": 30
+          }
+        ]
+      },
+      "ordersInvoices": {
+        "defaultCommissionPercent": 5,
+        "defaultDiscountType": "none",
+        "defaultDiscountValue": 0,
+        "invoiceBranding": {},
+        "autoPrintAfterPayment": false
+      },
+      "warehouse": {
+        "drawers": [
+          {
+            "id": "A",
+            "name": "الدرج A",
+            "capacity": 50
+          },
+          {
+            "id": "B",
+            "name": "الدرج B",
+            "capacity": 40
+          }
+        ],
+        "fullAlertThresholdPercent": 90
+      },
+      "delivery": {
+        "insideNKCPrice": 100,
+        "outsideNKCPrice": 150,
+        "courierProfitPercent": 100
+      },
+      "notifications": {
+        "missingTracking": true,
+        "unweighedShipments": true,
+        "unpaidInvoices": true,
+        "channelInApp": true,
+        "channelPush": false
+      }
+    },
+    "diffs": [
+      {
+        "key": "general",
+        "new": {
+          "businessName": "Fast Command",
+          "language": "ar",
+          "defaultCurrency": "MRU",
+          "phone": "+222 00000000",
+          "email": "support@example.com",
+          "address": "Nouakchott"
+        }
+      },
+      {
+        "key": "users",
+        "new": [
+          {
+            "id": "u_admin",
+            "name": "Admin",
+            "role": "admin",
+            "email": "admin@example.com",
+            "permissions": {
+              "read": true,
+              "write": true,
+              "update": true,
+              "delete": true
+            }
+          },
+          {
+            "id": "u_emp",
+            "name": "Employee",
+            "role": "employee",
+            "email": "emp@example.com",
+            "permissions": {
+              "read": true,
+              "write": true,
+              "update": true,
+              "delete": false
+            }
+          }
+        ]
+      },
+      {
+        "key": "currencies",
+        "new": {
+          "rates": {
+            "USD": 40,
+            "AED": 11,
+            "EUR": 43
+          }
+        }
+      },
+      {
+        "key": "shipping",
+        "new": {
+          "companies": [
+            {
+              "id": "sc1",
+              "name": "Aramex",
+              "countries": [
+                "UAE",
+                "CN"
+              ]
+            },
+            {
+              "id": "sc2",
+              "name": "DHL",
+              "countries": [
+                "UAE"
+              ]
+            }
+          ],
+          "types": [
+            {
+              "id": "st1",
+              "kind": "air_standard",
+              "country": "UAE",
+              "pricePerKgMRU": 1000,
+              "durationDays": 7
+            },
+            {
+              "id": "st2",
+              "kind": "air_express",
+              "country": "UAE",
+              "pricePerKgMRU": 1800,
+              "durationDays": 3
+            },
+            {
+              "id": "st3",
+              "kind": "sea",
+              "country": "CN",
+              "pricePerKgMRU": 600,
+              "durationDays": 30
+            }
+          ]
+        }
+      },
+      {
+        "key": "ordersInvoices",
+        "new": {
+          "defaultCommissionPercent": 5,
+          "defaultDiscountType": "none",
+          "defaultDiscountValue": 0,
+          "invoiceBranding": {},
+          "autoPrintAfterPayment": false
+        }
+      },
+      {
+        "key": "warehouse",
+        "new": {
+          "drawers": [
+            {
+              "id": "A",
+              "name": "الدرج A",
+              "capacity": 50
+            },
+            {
+              "id": "B",
+              "name": "الدرج B",
+              "capacity": 40
+            }
+          ],
+          "fullAlertThresholdPercent": 90
+        }
+      },
+      {
+        "key": "delivery",
+        "new": {
+          "insideNKCPrice": 100,
+          "outsideNKCPrice": 150,
+          "courierProfitPercent": 100
+        }
+      },
+      {
+        "key": "notifications",
+        "new": {
+          "missingTracking": true,
+          "unweighedShipments": true,
+          "unpaidInvoices": true,
+          "channelInApp": true,
+          "channelPush": false
+        }
+      }
+    ]
+  }
+]

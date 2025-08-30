@@ -1,0 +1,1 @@
+"# fastcomand-all" 
